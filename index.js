@@ -23,6 +23,7 @@ const urls = [
     async function run() {
         if (task) {
             console.log("task took longer then 1min. Skipping task")
+            return;
         }
         task = true;
         try {
