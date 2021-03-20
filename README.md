@@ -28,11 +28,8 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-3. Change the example.env to env`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
-4. Enter your telegram bot token and friend keys`
+3. Change the example.env to .env`
+4. Enter your telegram bot token and friend keys to .env`
 ```JS
 Tele_Token = 'ENTER YOUR Token';
 ```
