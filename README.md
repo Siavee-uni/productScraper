@@ -32,4 +32,5 @@ This is an example of how to list things you need to use the software and how to
 4. Enter your telegram bot token and friend keys to .env`
 ```JS
 Tele_Token = 'ENTER YOUR Token';
+Tele_Id1 = 'ENTER YOUR Id';
 ```
