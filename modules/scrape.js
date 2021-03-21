@@ -12,7 +12,11 @@ const scrape = async function scape(token, telegramIds, urls) {
     telegram.setIds(telegramIds);
     // get page content
     let results = await scraper.getPage();
-    // send message 
+    //check if pupeteer return array
+    if (!Array.isArray(results)) {
+        console.log("puppeteer failed to scrape pages")
+        return;
+      }
     for (let result of results) {
         // check for amazon captcha
         if (result.captcha === true) {

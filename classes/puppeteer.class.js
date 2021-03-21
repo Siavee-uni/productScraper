@@ -78,12 +78,13 @@ class Scraper {
                     let text = document.querySelector("#priceblock_ourprice");
                     return text ? text.innerText : false;
                 });
+                
                 let output = {
-                    captcha: captcha,
-                    available: available,
-                    url: url,
-                    cardButton: cardButton,
-                    price: price,
+                    "captcha": captcha,
+                    "available": available,
+                    "url": url,
+                    "cardButton": cardButton,
+                    "price": price,
                 };
                 // push ouput to array
                 urls.push(output);
